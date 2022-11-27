@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        :root{
+            --mycolor:#7cc93d;
+            --lcolor:#e8e8ff;
+        }
+        #outer{
+            min-height: 100px;
+            width: 1200px;
+            border: 1px solid black;
+            margin: 0px auto;
+        }
+        #top{
+            height: 600px;
+            width: 100%;
+            background-image: url("img/boys2.avif");
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            animation: slider 9s infinite alternate;
+        }
+        #header{
+            height: 50px;
+            width: 100%;
+            background: rgba(0,0,0,0.3);
+            border: 2px solid white;
+        }
+        #logo{
+            height: 50px;
+            width: 300px;
+            float: left;
+            line-height: 50px;
+            font-size: 35px;
+            padding-left: 30px;
+            box-sizing: border-box;
+            color: white;
+
+        }
+        #manu{
+            height: 50px;
+            width: 900px;
+            /* background: green; */
+            float: left;
+        }
+        nav ul{
+            list-style: none;
+        }
+        nav ul li{
+            height: 40px;
+            width: 120px;
+            /* background: yellow; */
+            /* border: 1px solid aqua; */
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50px;
+            float: left;
+            transform: translateY(4px);
+            margin-left: 5px;
+            font-weight: bold;
+            color: white;
+            transition: all ease 1s;
+        }
+        nav ul li:hover{
+            background: var(--mycolor);
+            transition: all ease 1s;
+
+        }
+        #header1{
+            width: 1200px;
+            min-height: 550px;
+
+        }
+        #left{
+            min-height: 500px;
+            min-width: 700px;
+            float: left;
+            
+        }
+        #right{
+            min-height: 400px;
+            min-width: 400px;
+            float: left;
+            /* background: aqua; */
+            margin: 25px 50px;
+            background: rgba(255,255,255,.3);
+            padding: 40px;
+            box-sizing: border-box;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .txt{
+            height: 65px;
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            border: none;
+            padding-left: 10px;
+        }
+        .btn{
+            background: var(--mycolor);
+            height: 45px;
+            width: 100%;
+            border-radius: 5px;
+            color: white;
+            border: none;
+            margin-top: 10px;
+        }
+        @keyframes slider
+        {
+            0%{
+                background-image: url("img/boys1.avif");
+                background-size: 100% 100%;
+            }
+            50%{
+                background-image: url("img/boys3.avif");
+            background-size: 100% 100%;
+            }
+
+        }
+        #aboutus{
+            height: auto;
+            width: 1200px;
+            background: var(--lcolor);
+            padding: 50px 150px;
+            box-sizing: border-box;
+            text-align: justify;
+            column-count: 3;
+            column-gap: 30px;
+            column-rule: 10px dashed silver;
+        }
+        #services{
+            min-height: 500px;
+            width: 1200px;
+            background: var(--mycolor);
+            padding: 30px 150px;
+            box-sizing: border-box;
+        }
+        .col{
+            height: 230px;
+            width: 280px;
+            float: left;
+            background: var(--lcolor);
+            margin: 10px;
+            border-radius: 10px;
+            border: 2px solid silver;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: justify;
+            transition: all ease 0.5s;
+        }
+        .row{
+            height: 250px;
+            width: 900px;
+            
+
+        }
+        #contactus{
+            min-height: 500px;
+            width: 1200px;
+            background: var(--lcolor);
+            padding: 40px;
+            box-sizing: border-box;
+        }
+        #gallery{
+            min-height: 500px;
+            width: 1200px;
+            background: var(--mycolor);
+        }
+        #teem{
+            min-height: 200px;
+            width: 1200px;
+
+        }
+        #ufooter{
+            min-height: 300px;
+            width: 1200px;
+            background: black;
+            border: 2px solid white;
+
+        }
+        #bfooter{
+            min-height: 50px;
+            width: 1200px;
+            background: white;
+            line-height: 50px;
+            text-align: center;
+            font-size: 22px;
+        }
+        .col:hover{
+            background: url("img/nature1.avif");
+            background-size: cover;
+            color: white;
+            transition: all ease 0.5s;
+            transform: scale(1.005);
+            box-shadow: 0px 0px 20px 2px black;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <div id="top">
+            <div id="header">
+                <div id="logo">ABHI<span style="color: var(--mycolor);">VARMA</span></div>
+                <div id="manu">
+                    <nav>
+                        <ul>
+                            <a href=""><li>Home</li></a>
+                            <a href=""><li>About us</li></a>
+                            <a href=""><li>Services</li></a>
+                            <a href=""><li>Gallery</li></a>
+                            <a href=""><li>Contact us</li></a>
+                            <a href=""><li>Register</li></a>
+                            <a href=""><li style="color: var(--mycolor);">Login</li></a>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        
+        <div id="header1">
+            <div id="left">
+                <div style="font-size: 32px;box-sizing: border-box; color: white; text-align: center; padding-top: 200px; box-sizing: border-box;">Welcome to <span style="color: var(--mycolor); padding: 0px;">Teckstudy Sub</span></div>
+                <div style="text-align: center; font-size: 24px; color: white;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </div>
+                <div style="height: 45px; width: 110px; border-radius: 50px; background: var(--mycolor); color: white; margin: 0px auto; line-height: 40px; text-align: center; font-weight: bold;">Sign Up</div>
+            </div>
+            <div id="right">
+                <form action="">
+                    Name <br> <input type="text" placeholder="Enter your name" required class="txt"><br>
+
+                    Email <br> <input type="email" placeholder="Enter your email" required class="txt"><br>
+
+                    Mobile <br> <input type="mobile" placeholder="Enter your monile" required class="txt"><br>
+
+                    Meassage <br> <textarea name="" required placeholder="Enter your massage.."cols="40" rows="3"></textarea><br>
+
+                    <input type="submit" value="save" class="btn">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="aboutus">
+        <div style="font-size: 32px; text-align: center;">About <b style="color: var(--mycolor);">Us</b></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptatem eum officiis?
+             Quae aspernatur quos vero inventore repellendus sunt asperiores illum consectetur nihil dolores
+              voluptatem odio magni laudantium tempora reprehenderit esse ex rem aperiam autem, officia vitae
+               odit? Deserunt hic illum commodi consequuntur enim cum, incidunt vero sit repellendus voluptas
+                laborum at nobis, fugit tempora minus blanditiis ipsum corporis beatae velit temporibus alias doloremque,
+                 iste adipisci mollitia. Culpa omnis, enim magni amet temporibus commodi quod aperiam saepe inventore,
+                  placeat explicabo asperiores. Quam autem totam voluptas excepturi officia corrupti cumque sint quidem voluptates error.
+             Nemo, quisquam! Cumque harum mollitia placeat labore.
+             voluptatem odio magni laudantium tempora reprehenderit esse ex rem aperiam autem, officia vitae
+             odit? Deserunt hic illum commodi consequuntur enim cum, incidunt vero sit repellendus voluptas
+              laborum at nobis, fugit tempora minus blanditiis ipsum corporis beatae velit temporibus alias doloremque,
+               iste adipisci mollitia. Culpa omnis, enim magni amet temporibus commodi quod aperiam saepe inventore,
+                placeat explicabo asperiores. Quam autem totam voluptas excepturi officia corrupti cumque sint quidem voluptates error.
+           Nemo, quisquam! Cumque harum mollitia placeat labore.
+           voluptatem odio magni laudantium tempora reprehenderit esse ex rem aperiam autem, officia vitae
+           odit? Deserunt hic illum commodi consequuntur enim cum, incidunt vero sit repellendus voluptas
+            laborum at nobis, fugit tempora minus blanditiis ipsum corporis beatae velit temporibus alias doloremque,
+             iste adipisci mollitia. Culpa omnis, enim magni amet temporibus commodi quod aperiam saepe inventore,
+              placeat explicabo asperiores. Quam autem totam voluptas excepturi officia corrupti cumque sint quidem voluptates error.
+         Nemo, quisquam! Cumque harum mollitia placeat labore.</p>
+    </div>
+    <div id="services">
+        <div style="font-size: 32px; text-align: center; color: black;">Our <b style="color: var(--lcolor);">Services</b></div>
+        <div class="row">
+            <div class="col">
+                <center>   <img src="img/graduate.png" height="40px" alt=""><br>
+                    <b>Software Development</b>
+                    p
+                </center>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sed iiusto incidunt. Est aliquam harum quaerat sed laboriosam explicabo suscipit velit hic architecto blanditiis.
+                
+            </div>
+            <div class="col">
+                <center>   <img src="img/graduate.png" height="40px" alt=""><br>
+                    <b>Software Development</b>
+                    p
+                </center>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sed iiusto incidunt. Est aliquam harum quaerat sed laboriosam explicabo suscipit velit hic architecto blanditiis.
+                
+            </div>
+            <div class="col">
+                <center>   <img src="img/graduate.png" height="40px" alt=""><br>
+                    <b>Software Development</b>
+                    p
+                </center>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sed iiusto incidunt. Est aliquam harum quaerat sed laboriosam explicabo suscipit velit hic architecto blanditiis.
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <center>   <img src="img/graduate.png" height="40px" alt=""><br>
+                    <b>Software Development</b>
+                    
+                </center>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sed iiusto incidunt. Est aliquam harum quaerat sed laboriosam explicabo suscipit velit hic architecto blanditiis.
+                
+            </div>
+            <div class="col">
+                <center>   <img src="img/graduate.png" height="40px" alt=""><br>
+                    <b>Software Development</b>
+                    
+                </center>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sed iiusto incidunt. Est aliquam harum quaerat sed laboriosam explicabo suscipit velit hic architecto blanditiis.
+                
+            </div>
+            <div class="col">
+                <center>   <img src="img/graduate.png" height="40px" alt=""><br>
+                    <b>Software Development</b>
+                    
+                </center>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sed iiusto incidunt. Est aliquam harum quaerat sed laboriosam explicabo suscipit velit hic architecto blanditiis.
+                
+            </div>
+        </div>
+    </div>
+    <div id="contactus">
+        <div style="font-size: 32px; text-align: center; color: black;">Google <b style="color: var(--mycolor);">Map</b></div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3558.189376074514!2d80.9611319140986!3d26.897484317222716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1stechpile!5e0!3m2!1sen!2sin!4v1666079946649!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div id="team"></div>
+    <div id="gallery"></div>
+    <div id="ufooter"></div>
+    <div id="bfooter"></div>
+    </div>
+</body>
+</html>
