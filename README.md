@@ -1,11 +1,11 @@
 ### Spining
 
-- click [website](https://Ramsakal143.github.io/Metro-lko/demo6.html)
+- click [website](https://visitramsp.github.io/Metro-lko/demo6.html)
 ----
 ### AbhiTechStudy
 
-- click [website](https://Ramsakal143.github.io/Metro-lko/AbhiTechstudy/index.html)
+- click [website](https://visitramsp.github.io/Metro-lko/AbhiTechstudy/index.html)
 ----
 ### Lucknow metro
 
-- click [website](https://Ramsakal143.github.io/Metro-lko/metro/index.html)
+- click [website](https://visitramsp.github.io/Metro-lko/metro/index.html)
